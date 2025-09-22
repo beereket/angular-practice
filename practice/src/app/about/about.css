@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
+
+.about-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px 100px;
+}
+
+.about-heading-text { 
+  max-width: 560px; 
+}
+.about-heading-text h3 {
+  color: #DF6951; 
+  letter-spacing: 0.02em; 
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.about-heading-text .underline {
+  display: inline-block;
+  background: url("/assets/images/about/Decore.svg") no-repeat bottom center;
+  background-size: contain;
+  padding-bottom: 5px;
+}
+  
+.about-heading-text h2 {
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 1.2;
+  color: #181E4B;
+  margin: 0;
+  padding: 0;
+}
+.about-heading-text .heading { 
+  margin: 20px 0 20px; 
+}
+.about-heading-text p {
+  color: #5E6282;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-heading .btn { padding: 0 20px; }
+.about-heading .btn { 
+  background: #F1A501;
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+
+
+  font-family: 'Volkh', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+

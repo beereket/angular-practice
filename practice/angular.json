@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "practice2": {
+    "practice": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -22,6 +22,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
             "styles": [
@@ -56,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "practice2:build:production"
+              "buildTarget": "practice:build:production"
             },
             "development": {
-              "buildTarget": "practice2:build:development"
+              "buildTarget": "practice:build:development"
             }
           },
           "defaultConfiguration": "development"
