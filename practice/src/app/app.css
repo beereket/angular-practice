@@ -2,10 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: var(--space-6);
-    padding: var(--space-4) 0;
-    font-family: var(--font-sans);
-    font-size: var(--font-size-md);
+    gap: 24px;
+    padding: 16px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -16,54 +18,40 @@
 }
 
 .nav a {
-    margin-right: var(--space-6);
-    padding: var(--space-2) var(--space-3);
-    border-radius: var(--radius-sm);
+    margin-right: 24px;
+    padding: 6px 10px;
+    border-radius: 6px;
     cursor: pointer;
-    color: var(--color-text-muted);
-    transition: background .2s ease, color .2s ease;
+    color: #475569;
+    text-decoration: none;
 }
 
 .nav a:last-child { margin-right: 0; }
-.nav a:hover { background: var(--color-hover); color: var(--color-text); }
+.nav a:hover { background: #ffeed3; color: #0f172a; }
 
 .buttons button {
     min-width: 100px;
     height: 40px;
     background: transparent;
-    border-radius: var(--radius-md);
-    border:none;
-    margin-right: var(--space-4);
+    border-radius: 10px;
+    border: none;
+    margin-right: 16px;
     cursor: pointer;
 }
 
 .buttons button:hover {
-    background: var(--color-hover);
+    background: #ffeed3;
 }
 
 .buttons .register-btn {
-    border: 1px solid var(--color-text);
+    border: 1px solid #0f172a;
 }
 
-.buttons .login-btn { color: var(--color-text-muted); }
-.buttons .register-btn { background: var(--color-text); color: #fff; }
+.buttons .login-btn { color: #475569; }
+.buttons .register-btn { background: #0f172a; color: #ffffff; }
 .buttons .register-btn:hover { filter: brightness(0.95); }
 
-/* Header container width */
-.header > .logo,
-.header > .nav,
-.header > .buttons {
-    flex: 0 0 auto;
-}
-
-/* Make header content align to global container */
-body > app-root > header.header,
-body > app-root header.header {
-    width: min(1100px, 92%);
-    margin: 0 auto;
-}
-
 @media (max-width: 768px) {
-    .nav a { margin-right: var(--space-3); }
+    .nav a { margin-right: 12px; }
     .buttons button { min-width: 88px; height: 38px; }
 }

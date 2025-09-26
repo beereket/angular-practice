@@ -5,6 +5,7 @@
   justify-content: space-between;
   gap: 20px;
   padding: 50px 100px;
+
 }
 
 .about-heading-text { 
@@ -55,7 +56,19 @@
   border: none;
   color: #fff;
   box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+}
 
+
+.about-info {
+  padding: 20px 100px;
+}
+.about-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+.about-info p {
+  margin: 4px 0;
+  font-size: 16px;
 
   font-family: 'Volkh', sans-serif;
   font-size: 18px;
