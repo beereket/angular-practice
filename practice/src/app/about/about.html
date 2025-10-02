@@ -11,13 +11,13 @@
       engrossed listening. Park gate sell they west hard for the.
     </p>
 
-    <div class="butotns">
-      <button class="btn">Find Out More</button>
+    <div class="buttons">
+      <button class="btn" [disabled]="isButtonDisabled">Find Out More</button>
     </div>
   </div>
 
   <div>
-    <img src="assets/images/about/traveller.png" alt="traveller" />
+    <img [src]="travellerImg" alt="traveller"/>
   </div>
 </div>
 
@@ -27,24 +27,58 @@
     <ul class="about-info-list">
       <li class="about-info-item">
         <span class="label">ID</span>
-        <span class="value">22B030344</span>
+        <span class="value">{{ id }}</span>
       </li>
       <li class="about-info-item">
         <span class="label">Name</span>
-        <span class="value">Bereket Yergali</span>
+        <span class="value">{{ name }}</span>
       </li>
       <li class="about-info-item">
         <span class="label">University</span>
-        <span class="value">KBTU</span>
+        <span class="value">{{ university }}</span>
       </li>
       <li class="about-info-item">
         <span class="label">Email</span>
-        <span class="value">b_yergali@kbtu.kz</span>
+        <span class="value">{{ email }}</span>
       </li>
       <li class="about-info-item">
         <span class="label">Practice</span>
-        <span class="value">2</span>
+        <span class="value">{{ practice }}</span>
       </li>
     </ul>
   </div>
+
+  <div class="about-info-card">
+    <div class="like-section">
+
+      <p [class.highlight]="likes >= 5">Likes: {{ likes }}</p>
+      <button class="btn" (click)="addLike()">Like</button>
+    </div>
+
+    <button (click)="toggleMessage()">
+      {{ showMessage ? 'Hide Message' : 'Show Message' }}
+    </button>
+
+    <p *ngIf="showMessage">Thank you for visiting!</p>
+  </div>
+
+
+  <div class="about-info-card">
+
+    <div class="form-control">
+      <label>Your Name:</label>
+      <input [(ngModel)]="inputName" placeholder="Enter your name" />
+      <p *ngIf="inputName">Assalamalikum, {{ inputName }}!</p>
+    </div>
+
+    <div class="form-control">
+      <label>Email:</label>
+      <input [(ngModel)]="inputEmail" placeholder="Enter your email" />
+      <button class="subscribe-btn" (click)="subscribe()">Subscribe</button>
+      <p *ngIf="subscribed">Thanks, {{ inputEmail }}, we’ll be in touch!</p>
+    </div>
+  </div>
 </div>
+
+
+

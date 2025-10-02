@@ -8,12 +8,12 @@
 
 }
 
-.about-heading-text { 
-  max-width: 560px; 
+.about-heading-text {
+  max-width: 560px;
 }
 .about-heading-text h3 {
-  color: #DF6951; 
-  letter-spacing: 0.02em; 
+  color: #DF6951;
+  letter-spacing: 0.02em;
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
@@ -25,7 +25,7 @@
   background-size: contain;
   padding-bottom: 5px;
 }
-  
+
 .about-heading-text h2 {
   font-family: 'Volkhov', serif;
   font-weight: 700;
@@ -35,8 +35,8 @@
   margin: 0;
   padding: 0;
 }
-.about-heading-text .heading { 
-  margin: 20px 0 20px; 
+.about-heading-text .heading {
+  margin: 20px 0 20px;
 }
 .about-heading-text p {
   color: #5E6282;
@@ -48,7 +48,7 @@
 }
 
 .about-heading .btn { padding: 0 20px; }
-.about-heading .btn { 
+.about-heading .btn {
   background: #F1A501;
   width: 180px;
   height: 60px;
@@ -61,6 +61,9 @@
 
 .about-info {
   padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 .about-info-card {
   background: #ffffff;
@@ -104,4 +107,81 @@
   .about-info-card { width: 100%; }
 }
 
+.like-section {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  color: #0f172a;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
 
+.like-section .btn {
+  background: #F1A501;
+  border-radius: 10px;
+  padding: 0 20px;
+  border: none;
+  color: #fff;
+  box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+}
+
+.about-info-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  width: 400px;
+  margin: 20px auto;
+}
+
+.about-info-card h3 {
+  margin-bottom: 16px;
+  color: #1e293b;
+}
+
+.form-control {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.15);
+}
+
+.subscribe-btn {
+  margin-top: 8px;
+  margin-left: 16px;
+  background: #F1A501;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+  background: #DF6951;
+}
+
+p {
+  margin-top: 8px;
+  color: #475569;
+}
