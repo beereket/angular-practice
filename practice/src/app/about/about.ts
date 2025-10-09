@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [FormsModule, CommonModule], // <--- добавили сюда
+  imports: [FormsModule, CommonModule],
   templateUrl: './about.html',
   styleUrls: ['./about.css']
 })
