@@ -1,1 +1,15 @@
-<p>country-list works!</p>
+<div class="container">
+  <h2>🌍 Available Countries</h2>
+
+  <ul>
+    <li
+      class="country-list-card"
+      *ngFor="let country of countries"
+      (click)="onSelectCountry(country.countryCode)"
+    >
+      {{ country.name }} ({{ country.countryCode }})
+    </li>
+  </ul>
+
+  <app-country-info *ngIf="selectedCode" [countryCode]="selectedCode"></app-country-info>
+</div>

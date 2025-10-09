@@ -1,0 +1,23 @@
+.country-list-card {
+  padding: 12px 16px;
+  background: #fafbfc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(34,149,211,0.09);
+  margin-bottom: 14px;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  cursor: pointer;
+  border-left: 5px solid #2295d3;
+  font-weight: 500;
+}
+.country-list-card:hover {
+  background: #eaf6ff;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 18px rgba(34,149,211,0.19);
+}
+
+@media (max-width: 600px) {
+  .country-list-card {
+    padding: 8px 10px;
+    font-size: 0.98rem;
+  }
+}

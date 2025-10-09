@@ -1,1 +1,11 @@
-<p>country-info works!</p>
+<div class="info-container">
+  <h3>🇨🇴 Public Holidays for {{ countryCode }}</h3>
+
+  <ul *ngIf="loaded">
+    <li *ngFor="let h of holidays">
+      <strong>{{ h.date }}</strong> — {{ h.localName }}
+    </li>
+  </ul>
+
+  <p *ngIf="!loaded">Loading...</p>
+</div>
